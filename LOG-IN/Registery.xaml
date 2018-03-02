@@ -1,0 +1,41 @@
+﻿<Window x:Class="LOG_IN.Registery"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LOG_IN"
+        mc:Ignorable="d"
+        Title="Registery" Height="300" Width="350">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition ></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="105"></ColumnDefinition>
+            <ColumnDefinition Width="287" ></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Label Content="NAME" Grid.Row="0"></Label>
+        <Label Content="SURNAME" Grid.Row="1"></Label>
+        <Label Content="GENDER" Grid.Row="2"></Label>
+        <Label Content="COUNTRY" Grid.Row="3"></Label>
+        <Label Content="USERNAME" Grid.Row="4"></Label>
+        <Label Content="PASSWORD" Grid.Row="5"></Label>
+        <Label Content="EMAIL" Grid.Row="6"></Label>
+        <TextBox LostFocus="textboxUsername_LostFocus" Name="textboxName" HorizontalAlignment="Left" Grid.Column="1" Width="225"></TextBox>
+        <TextBox LostFocus="textboxUsername_LostFocus" Name="textboxSurname"  HorizontalAlignment="Left" Grid.Row="1" Grid.Column="1" Width="225"></TextBox>
+        <ComboBox Name="comboboxGender" HorizontalAlignment="Left" Grid.Row="2" Grid.Column="1" Width="225"></ComboBox>
+        <ComboBox Name="comboboxCountry" HorizontalAlignment="Left" Grid.Row="3" Grid.Column="1" Width="225"></ComboBox>
+        <TextBox LostFocus="textboxUsername_LostFocus" Name="textboxUsername" HorizontalAlignment="Left" Grid.Row="4" Grid.Column="1" Width="225"></TextBox>
+        <PasswordBox LostFocus="textboxPassword_LostFocus" PasswordChar="*" Name="textboxPassword" HorizontalAlignment="Left" Grid.Row="5" Grid.Column="1" Width="225"></PasswordBox>
+        <TextBox Name="textboxEmail" HorizontalAlignment="Left" Grid.Row="6" Grid.Column="1" Width="225"></TextBox>
+        <Button Click="Button_Click" HorizontalAlignment="Center" Grid.Row="7" Grid.Column="1" Height="25" Width="100" Content="Register"></Button>
+        <Button Click="Button_Click_1" HorizontalAlignment="Left" Grid.Row="7" Grid.Column="0" Width="100" Height="25" Content="List"></Button>
+    </Grid>
+</Window>

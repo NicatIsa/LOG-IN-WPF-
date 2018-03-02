@@ -1,0 +1,25 @@
+﻿<Window x:Class="LOG_IN.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LOG_IN"
+        mc:Ignorable="d"
+        Title="Login" Height="200" Width="200">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="11*"></ColumnDefinition>
+            <ColumnDefinition Width="13*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="32*"></RowDefinition>
+            <RowDefinition Height="35*"></RowDefinition>
+            <RowDefinition Height="102*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" Grid.Column="0" Content="USERNAME"></Label>
+        <Label Grid.Row="1" Grid.Column="0" Content="PASSWORD"></Label>
+        <TextBox Name="textboxUsername" Grid.Row="0" Grid.Column="1" Width="100" Height="25" ></TextBox>
+        <PasswordBox Name="passwordbox" PasswordChar="*" Grid.Row="1" Grid.Column="1" Width="100" Height="25" ></PasswordBox>
+        <Button Click="Button_Click" Grid.Row="2" Grid.Column="1" Width="100" Height="30" Content="Login"></Button>
+    </Grid>
+</Window>
